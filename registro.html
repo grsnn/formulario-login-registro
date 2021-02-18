@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/discs-2b2e5.appspot.com/o/logo.png?alt=media&token=284a933a-e987-4e36-9ce1-4943fe86f8d2">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="messageSuccess" id="messageSuccess">
+        <h3 class="message__title">Regristro exitoso !!!</h3>
+        <p class="message__text">Hola puedes seguirme en mis redes sociales para enterarte de todo el contenido que compartire los dias domingos :)</p>
+        <div class="redes">
+            <a href="https://github.com/discs-c" target="_blanck" class="redes__item"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/discs_c" target="_blanck" class="redes__item"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/discs__c/" target="_blanck" class="redes__item"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span class="btn__close" id="close"><i class="fas fa-times"></i></span>
+    </div>
+    <div class="container">
+        <div class="container__icon"><i class="fas fa-user"></i></div>
+        <h3 class="title">Crea una cuenta !</h3>
+        <form class="form" id="form">
+            <ul class="error" id="message"></ul>
+            <div class="form__group">
+                <label class="form__group__icon" for="name">
+                    <i class="fas fa-pen-alt"></i>
+                </label>
+                <input type="text" class="form__group__input" id="name" placeholder="Nombre completo">
+            </div>
+            <div class="form__group">
+                <label class="form__group__icon" for="email">
+                    <i class="fas fa-envelope"></i>
+                </label>
+                <input type="text" class="form__group__input" id="email" placeholder="Correo electrónico">
+            </div>
+            <div class="form__group">
+                <label for="pass" class="form__group__icon"> 
+                    <i class="fas fa-lock"></i>
+                </label>
+                <input type="password" class="form__group__input" id="pass" placeholder="Contraseña">
+            </div>
+            <div class="form__group">
+                <label for="cpass" class="form__group__icon"> 
+                    <i class="fas fa-lock"></i>
+                </label>
+                <input type="password" class="form__group__input" id="cpass" placeholder="Confirmar contraseña">
+            </div>
+            <div class="button">
+                <button type="submit" class="button__btn" id="btn"><i class="fas fa-sign-in-alt"></i> Registrarme</button>
+                <div class="background"></div>
+            </div>
+
+            <div class="conditions regis">
+                <a href="index.html" class="conditions__link" id="not">¿ Ya tienes una cuenta ?</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/ec9d120159.js"></script>
+    <script src="assets/js/registro.js"></script>
+</body>
+</html>
